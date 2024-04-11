@@ -1,0 +1,22 @@
+<div class="app-container">
+  <div class="wrap">
+    <div class="header">
+      Electron App
+    </div>
+    <div class="background-messages">
+      Background messages:
+    </div>
+    <div class="message-count">
+      <div *ngFor="let message of messages">{{ message }}</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="button-container">
+      <div>
+        <button (click)="hello()" class="send-button">Send HTTP request</button>
+      </div>
+      <div>Response: {{helloMessage}}</div>
+    </div>
+  </div>
+</div>
